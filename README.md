@@ -1,11 +1,19 @@
-GSAP animation with React
+# GSAP animation with React
 
-## create and setup project
+### Create and setup project
 
 -> npx create-react-app gsap-app
 
 -> cd gsap-app
 
-# open terminal
+### Open terminal
 
 -> npm install @gsap/react
+
+### Clone app
+
+-> git clone https://github.com/MdZakirHossainBhuiyan/gsap-animation-with-react.git
+
+-> npm install
+
+-> npm start
