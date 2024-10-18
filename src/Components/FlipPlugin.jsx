@@ -46,7 +46,6 @@ const FlipPlugin = () => {
 
         // Flip.fit(state, {
         //     duration: 2,
-        //     // firstChild: boxRef,
         //     ease: "power1.inOut",
         //     scale: true
         // })
@@ -66,12 +65,12 @@ const FlipPlugin = () => {
             </div> */}
 
             <div className='w-full h-auto flex items-center justify-center mt-10'>
-                <div ref={parentRef} className='relative w-[50%] h-[500px] bg-white rounded-lg p-3'>
+                <div ref={parentRef} className='relative w-[50%] h-[300px] bg-white rounded-lg p-3'>
                     <div ref={boxRef} className='absolute top-3 left-3 bg-black w-[100px] h-[100px] rounded-lg text-white flex items-center justify-center' >Flip</div>
 
-                    <div ref={newContainerRef} className='absolute bottom-3 right-3 w-[300px] h-[300px] bg-blue-200 rounded-lg flex items-center justify-center'>New Container</div>
+                    <div ref={newContainerRef} className='absolute bottom-3 right-3 w-[200px] h-[200px] bg-blue-200 rounded-lg flex items-end justify-center pb-3'>New Container</div>
 
-                    <button onClick={flipContainer} className='bg-purple-300 px-5 py-2 rounded-lg absolute top-3 right-3'>Change Container</button>
+                    <button disabled={isPause} onClick={flipContainer} className='bg-purple-300 px-5 py-2 rounded-lg absolute top-3 right-3'>Change Container</button>
                     <button onClick={() => setIsPause(!isPause)} className='bg-purple-300 px-5 py-2 rounded-lg absolute top-3 right-[200px]'>Push Animation</button>
                 </div>
             </div>
